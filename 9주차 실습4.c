@@ -12,7 +12,7 @@
  	
  	print_array(list, SIZE);
  	square_array(list, SIZE);
- 	
+ return 0;	
  }
  
  void square_array(int a[], int size)
