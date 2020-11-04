@@ -5,19 +5,19 @@
 
 int main(int argc, char *argv[]) {
 	int i;
-	int grade[SIZE];
-	int score[SIZE];
-	printf("%i명의 점수를 입력하세요: \n", SIZE);
+	int a[SIZE] = {1, 2, 3, 4, 8};
+	int b[SIZE] = {1, 2, 3, 4, 5};
+	int flag_same = 1;
 	
 
 	for (i=0; i<SIZE; i++)
-	{   grade[i] = rand() %100;
-	    score[i]=grade[i];
-
+	{   if( a[i]!=b[i] )
+	       {
+		   printf(" 배열값은 다른 값을 가집니다.a[%i]=%i, b[%i]= %i",i, a[i], i, b[i]);
+	
+	       flag_same = 0; 
+    }
 	}
-	for (i=0; i<SIZE; i++)
-	printf("score [%i] = %i\n", i, score[i]);
-	
 	
 	return 0;
 }
